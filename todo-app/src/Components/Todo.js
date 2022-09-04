@@ -3,14 +3,14 @@ import style from './todo.module.css'
 
 
 export default function Todo(props) {
-    const {Title,Desc} = props.todo
+    const {title,desc} = props.todo
   return (
     
     <article className={style.todo}>
       
         <div>
-            <h4>{Title}</h4>
-            <p>{Desc}</p>
+            <h4>{title}</h4>
+            <p>{desc}</p>
         </div>
 
         <div>
