@@ -1,0 +1,10 @@
+.todo{
+    background-color: beige;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    padding: 5px;
+    border-radius: 6px;
+}
