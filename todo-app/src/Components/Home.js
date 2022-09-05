@@ -14,13 +14,22 @@ export default function Home() {
     });
 
     console.log(todos);
- }
+}
+
+const handleRemoveBtn=(id)=>{
+  setTodo((prevTodo)=>
+  {
+    const filteredData = prevTodo.filter((todo)=> todo.id !== id)
+    return filteredData;
+
+  });
+}
 
   return (
     <div className={style.contain}>
       <h1 style={{color:"white"}}>To Do App</h1>
       <NewTodo onAddTodo={handleAddTodo}/>
-      <Todos todosdata={todos}/>
+      <Todos todosdata={todos} onRemoveBtn={handleRemoveBtn}/>
     </div>
   )
 }

@@ -12,6 +12,7 @@ const NewTodo = (props) => {
 
   const handleChange=(e)=>{
     const name = e.target.name;
+    console.log(name);
     setTodo((oldtodo)=>{
       return {...oldtodo,[name]:e.target.value}
     })
